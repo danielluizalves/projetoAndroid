@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16171B">
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginRight="18dp"
+        android:background="#fff"
+        android:hint="E-mail"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/botao_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dias"
+        android:layout_alignStart="@+id/dias"
+        android:layout_alignEnd="@+id/dias"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="0dp"
+        android:background="#F1C40F"
+        android:text="Registrar-se"
+        android:textColor="#16171B" />
+
+    <EditText
+        android:id="@+id/dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:background="#fff"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/senha2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginRight="18dp"
+        android:background="#fff"
+        android:hint="Confirmar senha"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>
