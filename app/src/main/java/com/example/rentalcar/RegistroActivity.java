@@ -2,13 +2,17 @@ package com.example.rentalcar;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
-public class registerActivity extends AppCompatActivity {
+
+public class RegistroActivity extends AppCompatActivity {
 
     private EditText entradaEmail, entradaSenha, entradaConfirma;
     private Button botaoLogin;
@@ -16,7 +20,7 @@ public class registerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registro);
 
         inicializarComponentes();
 
@@ -73,12 +77,7 @@ public class registerActivity extends AppCompatActivity {
             dlg.show();
         }else {
             if(confirma){
-                // EXIBE SE AS SENHAS FOREM IGUAIS E NÃO NULAS
-                AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-                dlg.setTitle("AVISO");
-                dlg.setMessage("CADASTRADO COM SUCESSO!");
-                dlg.setNeutralButton("OK", null);
-                dlg.show();
+                chamaTela();
             } else {
                 // EXIBE MENSAGEM DE SENHAS DIFERENTES
                 AlertDialog.Builder dlg = new AlertDialog.Builder(this);
@@ -95,6 +94,14 @@ public class registerActivity extends AppCompatActivity {
     private boolean isCampoVazio(String valor){
         boolean resultado = (TextUtils.isEmpty(valor) || valor.trim().isEmpty());
         return resultado;
+    }
+
+    private void chamaTela(){
+        Intent objIntent = new Intent(RegistroActivity.this, aluguelActivity.class);
+        startActivity(objIntent);
+
+        Toast.makeText(getApplicationContext(),"Cadastrado com sucesso! Já pode alugar seus carros." ,Toast.LENGTH_LONG).show();
+
     }
 
 }

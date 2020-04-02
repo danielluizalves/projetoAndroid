@@ -18,7 +18,7 @@ public class aluguelActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.aluguel);
 
         inicializarComponentes();
         botaoAlugar.setOnClickListener(new View.OnClickListener() {

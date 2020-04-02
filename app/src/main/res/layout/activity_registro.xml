@@ -22,14 +22,18 @@
 
     <Button
         android:id="@+id/botao_login"
-        android:layout_width="match_parent"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dias"
-        android:layout_alignStart="@+id/dias"
-        android:layout_alignEnd="@+id/dias"
-        android:layout_marginStart="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginTop="124dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:background="#F1C40F"
         android:text="Registrar-se"
         android:textColor="#16171B" />
